@@ -1,0 +1,75 @@
+#background{
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.3)), url(./img/italy.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: 0;
+    height: 50rem;
+    width: 100%;
+}
+
+#accordion-container{
+    /* margin-top: 10rem; */
+    margin-left: 6rem;
+    width: 85%;
+    border: 2px solid white;
+}
+
+
+.accordion {
+  font-family: 'Raleway', sans-serif;
+    height: 6rem;
+    background-color: rgba(0,0,0,0.3);
+    color: white;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 1.6rem;
+    transition: 0.4s;
+    font-weight: bold;
+    
+  }
+  
+  .active, .accordion:hover {
+    background-color: rgba(204, 204, 204, 0.8);
+    color: black;
+  }
+  
+  .accordion:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-right: 2%;
+  }
+
+  .accordion:hover:after{
+    color: black;
+    transition: all 0.5s ease;
+  }
+  
+  .active:after {
+    content: "\2212";
+  }
+  
+  .panel {
+    width: 100%;
+    /* padding: 3% 0 3% 0; */
+    background-color: rgba(255, 255, 255, 0.8);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: black;
+  }
+
+  .panel p{
+    margin: 4% 0 4% 0;
+  }
